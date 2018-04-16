@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="software.base" template="/WEB-INF/template/default.jsp">
+		<put-attribute name="title" value="Home"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/content.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="ofacsHome" extends="software.base">
+		<put-attribute name="title" value="ofacsHome"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/ofacsHome.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="login" extends="software.base">
+		<put-attribute name="title" value="Admin Login"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/login.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="acc_login" extends="software.base">
+		<put-attribute name="title" value="Accountant Login"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/acc_login.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="loggedout" extends="software.base">
+		<put-attribute name="title" value="LogOut"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/loggedout.jsp"></put-attribute>
+	</definition>
+	
+	
+	<definition name="registration" extends="software.base">
+		<put-attribute name="title" value="Registration"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/registration.jsp"></put-attribute>
+	</definition>	
+	
+	<definition name="journal" extends="software.base">
+		<put-attribute name="title" value="journal"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/journal.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="chartofaccounts" extends="software.base">
+		<put-attribute name="title" value="chartofaccounts"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/chartofaccounts.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="employee" extends="software.base">
+		<put-attribute name="title" value="employee"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/employee.jsp"></put-attribute>
+	</definition>
+	
+	
+		
+</tiles-definitions>
